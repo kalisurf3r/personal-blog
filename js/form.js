@@ -2,11 +2,15 @@ const userInput = document.getElementById("user");
 const titleInput = document.getElementById("title");
 const contentInpit = document.getElementById("content");
 const submitButton = document.getElementById("submit");
+const themeSwitcher = document.getElementById("theme");
+const page = document.querySelector("body");
 
 const userObj = [];
+let mode = "light";
 
 function init() {
   const store = JSON.parse(localStorage.getItem("userObj"));
+  console.log(store);
 }
 
 function saveData() {
@@ -33,6 +37,20 @@ function handleSubmit(event) {
   userObj.push(obj);
   saveData();
   clear();
+  
+  window.location.href = "blog.html";
 }
 
 submitButton.addEventListener("click", handleSubmit);
+
+
+themeSwitcher.addEventListener("click",  () => { 
+  
+  if (mode === "light") {
+    mode = "dark";
+    page.setAttribute("class", "dark");
+} else {
+    mode = "light";
+    page.setAttribute("class", "light");
+}
+})

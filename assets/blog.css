@@ -17,14 +17,26 @@ header {
     padding: 1em;
     border: none;
     background: none;
-    height: 1.5em;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     position: relative;
     flex-direction: row;
-    left: 2100px;
+    left: 1200px;
     font-size: 20px;
     margin: 8px;
 }
+
+.dark {
+    background-color: rgb(43, 31, 31);
+    color: rgb(231, 222, 222);
+  }
+  
+  .light {
+    background-color: white;
+    color: black;
+  }
+
+
 
 footer {
     display: flex;

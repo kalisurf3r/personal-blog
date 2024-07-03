@@ -1,3 +1,4 @@
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -6,12 +7,23 @@ nav {
 }
 
 #theme {
-  padding: 0;
+  padding: 1em;
   border: none;
   background: none;
-  height: 1em;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   font-size: 20px;
+ margin: 8px;
+}
+
+.dark {
+  background-color: rgb(43, 31, 31);
+  color: rgb(231, 222, 222);
+}
+
+.light {
+  background-color: white;
+  color: black;
 }
 
 .left {
