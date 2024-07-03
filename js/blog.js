@@ -4,12 +4,15 @@ const backBtn = document.getElementById("back");
 
 const container = document.querySelector(".containerBlog");
 
-const userObj = [];
+
 let mode = "light";
+
+//upon loading the page
 init();
 
 backBtn.addEventListener("click", () => {
-   localStorage.setItem("userObj", JSON.stringify(userObj));
+  //clicking the back button will save the userObj to localStorage 
+  localStorage.setItem("userObj", JSON.stringify(userObj));
     window.history.back();
 });
 
@@ -24,6 +27,7 @@ themeSwitcher.addEventListener("click",  () => {
   }
   })
 
+  //function to display the blogs
   function init() {
     const store = JSON.parse(localStorage.getItem("userObj"));
     store.forEach((element) => {

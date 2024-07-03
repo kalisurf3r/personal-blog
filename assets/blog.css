@@ -3,60 +3,6 @@ header {
     border-bottom: 5px solid black;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.buttons {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    border: none;
-    background: none;
-    height: 70px;
-    width: 70px;
-    position: relative;
-    flex-direction: row;
-    left: 1200px;
-    font-size: 20px;
-    margin: 8px;
-}
-
-.dark {
-    background-color: rgb(43, 31, 31);
-    color: rgb(231, 222, 222);
-  }
-  
-  .light {
-    background-color: white;
-    color: black;
-  }
-
-
-
-footer {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    /* padding: 0.5em;
-    border: none;
-    height: 1em;
-    width: 30px;
-    position: relative;
-    flex-direction: row;
-    font-size: 20px;
-    left: 50px;
-    top: 1100px; */
-}
-.container {
-    position: relative;
-}
-
-
 h5 {
     display: flex;
     justify-content: flex-start;
@@ -89,4 +35,48 @@ a {
     text-decoration: none;
     color: black;
 }
+
+footer {
+    display: flex;
+}
+
+.container {
+    position: relative;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: none;
+    background: none;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    flex-direction: row;
+    left: 1200px;
+    font-size: 20px;
+    margin: 8px;
+}
+
+.dark {
+    background-color: rgb(43, 31, 31);
+    color: rgb(231, 222, 222);
+  }
+  
+.light {
+    background-color: white;
+    color: black;
+  }
+
+
+
+
 
