@@ -10,8 +10,6 @@ init();
 
 backBtn.addEventListener("click", () => {
    localStorage.setItem("userObj", JSON.stringify(userObj));
-    // saveUserObj();
-    // window.location.href = "index.html";
     window.history.back();
 });
 
@@ -25,11 +23,6 @@ themeSwitcher.addEventListener("click",  () => {
       page.setAttribute("class", "light");
   }
   })
-
-//   function saveUserObj() {
-//       const userObjJson = JSON.stringify(userObj);
-//       localStorage.setItem("userObj", userObjJson);
-//   }
 
   function init() {
     const store = JSON.parse(localStorage.getItem("userObj"));
