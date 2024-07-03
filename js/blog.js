@@ -3,8 +3,7 @@ const page = document.querySelector("body");
 const backBtn = document.getElementById("back");
 
 const container = document.querySelector(".containerBlog");
-
-
+let userObj = [];
 let mode = "light";
 
 //upon loading the page

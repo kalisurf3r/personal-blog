@@ -4,6 +4,7 @@ nav {
   justify-content: flex-end;
   padding: 1rem;
   border-bottom: solid 5px black;
+  flex-shrink: 1;
 }
 
 h2 {
@@ -14,7 +15,7 @@ h2 {
   align-items: center;
   position: relative;
   bottom: 550px;
-  left: 615px;
+  left: 360px;
 }
 
 form {
@@ -23,8 +24,8 @@ form {
   align-items: center;
   flex-direction: column;
   position: relative;
-  bottom: 300px;
-  left: 250px;
+  bottom: 250px;
+  left: auto;
 }
 
 label {
@@ -112,4 +113,43 @@ textarea {
   border: none;
   border-radius: 5px;
   width: 100px;
+}
+
+@media (max-width: 768px) {
+  #circle {
+      display: flex;
+      width: 50%;
+      height: 50%;
+  }
+  #blog {
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      position: relative;
+      bottom: 150px;
+      left: 115px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 150px;
+    left: auto;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  /* margin: 0; */
+  /* display: inline-flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 450px;
+  left: 225px;
+  }
 }
