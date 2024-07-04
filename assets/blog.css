@@ -36,6 +36,8 @@ li {
 a {
     text-decoration: none;
     color: black;
+    cursor: grab;
+    
 }
 
 footer {
@@ -45,7 +47,6 @@ footer {
 
 .container {
     position: relative;
-    /* display: flex; */
 }
 
 .title {
@@ -69,6 +70,7 @@ footer {
     font-size: 20px;
     margin: 8px;
     flex-shrink: 1;
+    cursor: grab;
 }
 
 .btnContainer {
